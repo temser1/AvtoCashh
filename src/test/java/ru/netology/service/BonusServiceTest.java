@@ -1,9 +1,6 @@
-package ru.netology.service;
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
+import org.junit.Assert;
 import ru.netology.service.BonusService;
-
 
 public class BonusServiceTest {
     BonusService hacker = new BonusService();
@@ -14,8 +11,9 @@ public class BonusServiceTest {
         int actual = hacker.remain(900);
         int expected = 100;
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
+
 
     @Test
     public void calculateRemainFrom999() {
